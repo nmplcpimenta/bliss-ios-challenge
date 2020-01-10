@@ -71,15 +71,79 @@
 		D82ABA1923C93303003B8FFD /* BlissHub */ = {
 			isa = PBXGroup;
 			children = (
+				D8CCE31A23C93F960098CBA5 /* Resources */,
+				D8CCE31B23C93FA00098CBA5 /* Sources */,
 				D82ABA1A23C93303003B8FFD /* AppDelegate.swift */,
 				D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */,
-				D82ABA1E23C93303003B8FFD /* ViewController.swift */,
-				D82ABA2023C93303003B8FFD /* Main.storyboard */,
-				D82ABA2323C93308003B8FFD /* Assets.xcassets */,
-				D82ABA2523C93308003B8FFD /* LaunchScreen.storyboard */,
 				D82ABA2823C93308003B8FFD /* Info.plist */,
 			);
 			path = BlissHub;
+			sourceTree = "<group>";
+		};
+		D8CCE31A23C93F960098CBA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D82ABA2323C93308003B8FFD /* Assets.xcassets */,
+				D8CCE31C23C93FB00098CBA5 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8CCE31B23C93FA00098CBA5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8CCE31D23C93FDC0098CBA5 /* MobileUI */,
+				D8CCE31E23C940370098CBA5 /* Presentation */,
+				D8CCE31F23C9403E0098CBA5 /* Core */,
+				D8CCE32023C940430098CBA5 /* Repositories */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D8CCE31C23C93FB00098CBA5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D82ABA2523C93308003B8FFD /* LaunchScreen.storyboard */,
+				D82ABA2023C93303003B8FFD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D8CCE31D23C93FDC0098CBA5 /* MobileUI */ = {
+			isa = PBXGroup;
+			children = (
+				D8CCE32123C940BF0098CBA5 /* GeneratedCode */,
+				D82ABA1E23C93303003B8FFD /* ViewController.swift */,
+			);
+			path = MobileUI;
+			sourceTree = "<group>";
+		};
+		D8CCE31E23C940370098CBA5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D8CCE31F23C9403E0098CBA5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D8CCE32023C940430098CBA5 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D8CCE32123C940BF0098CBA5 /* GeneratedCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GeneratedCode;
 			sourceTree = "<group>";
 		};
 		FC482D5EAA607C947C81B151 /* Pods */ = {
@@ -88,7 +152,6 @@
 				B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */,
 				5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
