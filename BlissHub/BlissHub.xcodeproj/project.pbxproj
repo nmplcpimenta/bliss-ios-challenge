@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D9B176729A3F51E9217A59 /* libPods-BlissHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080068D27F4E58C8FD52DC2 /* libPods-BlissHub.a */; };
 		D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1A23C93303003B8FFD /* AppDelegate.swift */; };
 		D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */; };
 		D82ABA1F23C93303003B8FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1E23C93303003B8FFD /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.release.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.release.xcconfig"; sourceTree = "<group>"; };
+		7080068D27F4E58C8FD52DC2 /* libPods-BlissHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlissHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.debug.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.debug.xcconfig"; sourceTree = "<group>"; };
 		D82ABA1723C93303003B8FFD /* BlissHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82ABA1A23C93303003B8FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D9B176729A3F51E9217A59 /* libPods-BlissHub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A5F22F8201AFBC591DE0E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7080068D27F4E58C8FD52DC2 /* libPods-BlissHub.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D82ABA0E23C93302003B8FFD = {
 			isa = PBXGroup;
 			children = (
 				D82ABA1923C93303003B8FFD /* BlissHub */,
 				D82ABA1823C93303003B8FFD /* Products */,
+				FC482D5EAA607C947C81B151 /* Pods */,
+				7A5F22F8201AFBC591DE0E51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = BlissHub;
 			sourceTree = "<group>";
 		};
+		FC482D5EAA607C947C81B151 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */,
+				5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82ABA2B23C93308003B8FFD /* Build configuration list for PBXNativeTarget "BlissHub" */;
 			buildPhases = (
+				35E06E0E4F1BD051BC034B1C /* [CP] Check Pods Manifest.lock */,
 				D82ABA1323C93303003B8FFD /* Sources */,
 				D82ABA1423C93303003B8FFD /* Frameworks */,
 				D82ABA1523C93303003B8FFD /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E06E0E4F1BD051BC034B1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlissHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D82ABA1323C93303003B8FFD /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		D82ABA2C23C93308003B8FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +346,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pt.nmplcpimenta.BlissHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D82ABA2D23C93308003B8FFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pt.nmplcpimenta.BlissHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

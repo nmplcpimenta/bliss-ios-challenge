@@ -1,0 +1,10 @@
+platform :ios, '11.0'
+use_modular_headers!
+
+target 'BlissHub' do
+	pod 'SwiftLint'
+	pod 'SwiftGen'
+
+	pod 'RxSwift'
+	pod 'Alamofire'
+end
