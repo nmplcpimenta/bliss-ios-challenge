@@ -7,9 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82950A023C9615000369CEF /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829509F23C9615000369CEF /* GithubRepository.swift */; };
+		D82950A223C9627A00369CEF /* EmojiGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950A123C9627A00369CEF /* EmojiGithubModel.swift */; };
+		D82950A523C9634300369CEF /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950A423C9634200369CEF /* Emoji.swift */; };
+		D82950A723C9669300369CEF /* GithubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950A623C9669300369CEF /* GithubProvider.swift */; };
+		D82950AA23C96BDE00369CEF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950A923C96BDE00369CEF /* String+Extensions.swift */; };
+		D82950B123C9CE5B00369CEF /* AppleReposInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950B023C9CE5B00369CEF /* AppleReposInteractor.swift */; };
+		D82950B323C9CE9700369CEF /* AvatarsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950B223C9CE9700369CEF /* AvatarsInteractor.swift */; };
+		D82950B523C9CEB600369CEF /* EmojisInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950B423C9CEB600369CEF /* EmojisInteractor.swift */; };
+		D82950BA23C9CF6F00369CEF /* EmojisGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950B923C9CF6F00369CEF /* EmojisGateway.swift */; };
+		D82950BD23C9CFA500369CEF /* AvatarsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950BC23C9CFA500369CEF /* AvatarsGateway.swift */; };
+		D82950C023C9CFBD00369CEF /* AppleReposGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950BF23C9CFBD00369CEF /* AppleReposGateway.swift */; };
+		D82950CA23C9EF6900369CEF /* AppleReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950C923C9EF6900369CEF /* AppleReposViewController.swift */; };
+		D82950CC23C9EF7400369CEF /* AvatarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950CB23C9EF7400369CEF /* AvatarsViewController.swift */; };
+		D82950CE23C9EFD600369CEF /* EmojisPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950CD23C9EFD600369CEF /* EmojisPresenter.swift */; };
+		D82950D023C9F00B00369CEF /* EmojisScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950CF23C9F00B00369CEF /* EmojisScene.swift */; };
+		D82950D323C9F03500369CEF /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950D223C9F03500369CEF /* Scene.swift */; };
+		D82950D523C9F06500369CEF /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950D423C9F06500369CEF /* Presenter.swift */; };
+		D82950D723C9F14700369CEF /* AvatarsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950D623C9F14700369CEF /* AvatarsPresenter.swift */; };
+		D82950D923C9F15100369CEF /* AvatarsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950D823C9F15100369CEF /* AvatarsScene.swift */; };
+		D82950DB23C9F15B00369CEF /* AppleReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950DA23C9F15B00369CEF /* AppleReposPresenter.swift */; };
+		D82950DD23C9F16600369CEF /* AppleReposScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950DC23C9F16600369CEF /* AppleReposScene.swift */; };
+		D82950E023C9F37600369CEF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950DF23C9F37600369CEF /* View.swift */; };
+		D82950E423C9F98900369CEF /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950E323C9F98900369CEF /* Gateway.swift */; };
+		D82950E623C9FA6900369CEF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950E523C9FA6900369CEF /* Repository.swift */; };
+		D82950E923C9FABE00369CEF /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950E823C9FABE00369CEF /* CoreDataRepository.swift */; };
+		D82950EC23C9FBBD00369CEF /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950EB23C9FBBD00369CEF /* Interactor.swift */; };
 		D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1A23C93303003B8FFD /* AppDelegate.swift */; };
 		D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */; };
-		D82ABA1F23C93303003B8FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1E23C93303003B8FFD /* ViewController.swift */; };
+		D82ABA1F23C93303003B8FFD /* EmojisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1E23C93303003B8FFD /* EmojisViewController.swift */; };
 		D82ABA2223C93303003B8FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82ABA2023C93303003B8FFD /* Main.storyboard */; };
 		D82ABA2423C93308003B8FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82ABA2323C93308003B8FFD /* Assets.xcassets */; };
 		D82ABA2723C93308003B8FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82ABA2523C93308003B8FFD /* LaunchScreen.storyboard */; };
@@ -28,10 +54,36 @@
 		AA847E8AAC7794A06E82759E /* libPods-BlissHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlissHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E130D9F84853D819F08ADC /* Pods-BlissHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.debug.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.debug.xcconfig"; sourceTree = "<group>"; };
 		B8B4FE9D34729FD0557F0E09 /* Pods-BlissHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.release.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.release.xcconfig"; sourceTree = "<group>"; };
+		D829509F23C9615000369CEF /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
+		D82950A123C9627A00369CEF /* EmojiGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGithubModel.swift; sourceTree = "<group>"; };
+		D82950A423C9634200369CEF /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		D82950A623C9669300369CEF /* GithubProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubProvider.swift; sourceTree = "<group>"; };
+		D82950A923C96BDE00369CEF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D82950B023C9CE5B00369CEF /* AppleReposInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposInteractor.swift; sourceTree = "<group>"; };
+		D82950B223C9CE9700369CEF /* AvatarsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsInteractor.swift; sourceTree = "<group>"; };
+		D82950B423C9CEB600369CEF /* EmojisInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisInteractor.swift; sourceTree = "<group>"; };
+		D82950B923C9CF6F00369CEF /* EmojisGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisGateway.swift; sourceTree = "<group>"; };
+		D82950BC23C9CFA500369CEF /* AvatarsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsGateway.swift; sourceTree = "<group>"; };
+		D82950BF23C9CFBD00369CEF /* AppleReposGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposGateway.swift; sourceTree = "<group>"; };
+		D82950C923C9EF6900369CEF /* AppleReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposViewController.swift; sourceTree = "<group>"; };
+		D82950CB23C9EF7400369CEF /* AvatarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsViewController.swift; sourceTree = "<group>"; };
+		D82950CD23C9EFD600369CEF /* EmojisPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisPresenter.swift; sourceTree = "<group>"; };
+		D82950CF23C9F00B00369CEF /* EmojisScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisScene.swift; sourceTree = "<group>"; };
+		D82950D223C9F03500369CEF /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		D82950D423C9F06500369CEF /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		D82950D623C9F14700369CEF /* AvatarsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsPresenter.swift; sourceTree = "<group>"; };
+		D82950D823C9F15100369CEF /* AvatarsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsScene.swift; sourceTree = "<group>"; };
+		D82950DA23C9F15B00369CEF /* AppleReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposPresenter.swift; sourceTree = "<group>"; };
+		D82950DC23C9F16600369CEF /* AppleReposScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposScene.swift; sourceTree = "<group>"; };
+		D82950DF23C9F37600369CEF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		D82950E323C9F98900369CEF /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
+		D82950E523C9FA6900369CEF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D82950E823C9FABE00369CEF /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		D82950EB23C9FBBD00369CEF /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		D82ABA1723C93303003B8FFD /* BlissHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82ABA1A23C93303003B8FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D82ABA1E23C93303003B8FFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D82ABA1E23C93303003B8FFD /* EmojisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisViewController.swift; sourceTree = "<group>"; };
 		D82ABA2123C93303003B8FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D82ABA2323C93308003B8FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82ABA2623C93308003B8FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +116,221 @@
 				AA847E8AAC7794A06E82759E /* libPods-BlissHub.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D829509D23C9611400369CEF /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				D82950B723C9CF4000369CEF /* Models */,
+				D829509F23C9615000369CEF /* GithubRepository.swift */,
+				D82950A623C9669300369CEF /* GithubProvider.swift */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
+		D82950A323C9633600369CEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D82950A423C9634200369CEF /* Emoji.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D82950A823C96BCC00369CEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D82950A923C96BDE00369CEF /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D82950AB23C9CE1F00369CEF /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				D82950EA23C9FBB300369CEF /* Shared */,
+				D82950AF23C9CE4600369CEF /* AppleRepos */,
+				D82950AE23C9CE3D00369CEF /* Avatars */,
+				D82950AC23C9CE2C00369CEF /* Emojis */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		D82950AC23C9CE2C00369CEF /* Emojis */ = {
+			isa = PBXGroup;
+			children = (
+				D82950B423C9CEB600369CEF /* EmojisInteractor.swift */,
+			);
+			path = Emojis;
+			sourceTree = "<group>";
+		};
+		D82950AE23C9CE3D00369CEF /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				D82950B223C9CE9700369CEF /* AvatarsInteractor.swift */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		D82950AF23C9CE4600369CEF /* AppleRepos */ = {
+			isa = PBXGroup;
+			children = (
+				D82950B023C9CE5B00369CEF /* AppleReposInteractor.swift */,
+			);
+			path = AppleRepos;
+			sourceTree = "<group>";
+		};
+		D82950B623C9CEFA00369CEF /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				D82950E223C9F97700369CEF /* Shared */,
+				D82950BE23C9CFAB00369CEF /* AppleRepos */,
+				D82950BB23C9CF9100369CEF /* Avatars */,
+				D82950B823C9CF5C00369CEF /* Emojis */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		D82950B723C9CF4000369CEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D82950A123C9627A00369CEF /* EmojiGithubModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D82950B823C9CF5C00369CEF /* Emojis */ = {
+			isa = PBXGroup;
+			children = (
+				D82950B923C9CF6F00369CEF /* EmojisGateway.swift */,
+			);
+			path = Emojis;
+			sourceTree = "<group>";
+		};
+		D82950BB23C9CF9100369CEF /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				D82950BC23C9CFA500369CEF /* AvatarsGateway.swift */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		D82950BE23C9CFAB00369CEF /* AppleRepos */ = {
+			isa = PBXGroup;
+			children = (
+				D82950BF23C9CFBD00369CEF /* AppleReposGateway.swift */,
+			);
+			path = AppleRepos;
+			sourceTree = "<group>";
+		};
+		D82950C123C9CFCA00369CEF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D82950E123C9F97100369CEF /* Shared */,
+				D82950E723C9FAA100369CEF /* CoreData */,
+				D829509D23C9611400369CEF /* GitHub */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D82950C323C9ED9800369CEF /* Emojis */ = {
+			isa = PBXGroup;
+			children = (
+				D82ABA1E23C93303003B8FFD /* EmojisViewController.swift */,
+			);
+			path = Emojis;
+			sourceTree = "<group>";
+		};
+		D82950C423C9EDA300369CEF /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				D82950CB23C9EF7400369CEF /* AvatarsViewController.swift */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		D82950C523C9EDA900369CEF /* AppleRepos */ = {
+			isa = PBXGroup;
+			children = (
+				D82950C923C9EF6900369CEF /* AppleReposViewController.swift */,
+			);
+			path = AppleRepos;
+			sourceTree = "<group>";
+		};
+		D82950C623C9EDB600369CEF /* Emojis */ = {
+			isa = PBXGroup;
+			children = (
+				D82950CD23C9EFD600369CEF /* EmojisPresenter.swift */,
+				D82950CF23C9F00B00369CEF /* EmojisScene.swift */,
+			);
+			path = Emojis;
+			sourceTree = "<group>";
+		};
+		D82950C723C9EDBD00369CEF /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				D82950D623C9F14700369CEF /* AvatarsPresenter.swift */,
+				D82950D823C9F15100369CEF /* AvatarsScene.swift */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		D82950C823C9EDC300369CEF /* AppleRepos */ = {
+			isa = PBXGroup;
+			children = (
+				D82950DA23C9F15B00369CEF /* AppleReposPresenter.swift */,
+				D82950DC23C9F16600369CEF /* AppleReposScene.swift */,
+			);
+			path = AppleRepos;
+			sourceTree = "<group>";
+		};
+		D82950D123C9F02800369CEF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D82950D223C9F03500369CEF /* Scene.swift */,
+				D82950D423C9F06500369CEF /* Presenter.swift */,
+				D82950DF23C9F37600369CEF /* View.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D82950DE23C9F27700369CEF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D82950A823C96BCC00369CEF /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D82950E123C9F97100369CEF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D82950E523C9FA6900369CEF /* Repository.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D82950E223C9F97700369CEF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D82950E323C9F98900369CEF /* Gateway.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D82950E723C9FAA100369CEF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D82950E823C9FABE00369CEF /* CoreDataRepository.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D82950EA23C9FBB300369CEF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D82950EB23C9FBBD00369CEF /* Interactor.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		D82ABA0E23C93302003B8FFD = {
@@ -113,7 +380,7 @@
 				D8CCE31D23C93FDC0098CBA5 /* MobileUI */,
 				D8CCE31E23C940370098CBA5 /* Presentation */,
 				D8CCE31F23C9403E0098CBA5 /* Core */,
-				D8CCE32023C940430098CBA5 /* Repositories */,
+				D8CCE32023C940430098CBA5 /* DataManagement */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -133,8 +400,11 @@
 		D8CCE31D23C93FDC0098CBA5 /* MobileUI */ = {
 			isa = PBXGroup;
 			children = (
+				D82950DE23C9F27700369CEF /* Shared */,
+				D82950C523C9EDA900369CEF /* AppleRepos */,
+				D82950C423C9EDA300369CEF /* Avatars */,
+				D82950C323C9ED9800369CEF /* Emojis */,
 				D8CCE32123C940BF0098CBA5 /* GeneratedCode */,
-				D82ABA1E23C93303003B8FFD /* ViewController.swift */,
 			);
 			path = MobileUI;
 			sourceTree = "<group>";
@@ -142,6 +412,10 @@
 		D8CCE31E23C940370098CBA5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D82950D123C9F02800369CEF /* Shared */,
+				D82950C823C9EDC300369CEF /* AppleRepos */,
+				D82950C723C9EDBD00369CEF /* Avatars */,
+				D82950C623C9EDB600369CEF /* Emojis */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -149,15 +423,19 @@
 		D8CCE31F23C9403E0098CBA5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D82950AB23C9CE1F00369CEF /* Interactors */,
+				D82950A323C9633600369CEF /* Models */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		D8CCE32023C940430098CBA5 /* Repositories */ = {
+		D8CCE32023C940430098CBA5 /* DataManagement */ = {
 			isa = PBXGroup;
 			children = (
+				D82950B623C9CEFA00369CEF /* Gateways */,
+				D82950C123C9CFCA00369CEF /* Repositories */,
 			);
-			path = Repositories;
+			path = DataManagement;
 			sourceTree = "<group>";
 		};
 		D8CCE32123C940BF0098CBA5 /* GeneratedCode */ = {
@@ -335,12 +613,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82950B323C9CE9700369CEF /* AvatarsInteractor.swift in Sources */,
 				D8CCE33023C949210098CBA5 /* AppStrings.swift in Sources */,
-				D82ABA1F23C93303003B8FFD /* ViewController.swift in Sources */,
+				D82950AA23C96BDE00369CEF /* String+Extensions.swift in Sources */,
+				D82950D723C9F14700369CEF /* AvatarsPresenter.swift in Sources */,
+				D82950CA23C9EF6900369CEF /* AppleReposViewController.swift in Sources */,
+				D82950BD23C9CFA500369CEF /* AvatarsGateway.swift in Sources */,
+				D82950EC23C9FBBD00369CEF /* Interactor.swift in Sources */,
+				D82950A223C9627A00369CEF /* EmojiGithubModel.swift in Sources */,
+				D82950E423C9F98900369CEF /* Gateway.swift in Sources */,
+				D82950DB23C9F15B00369CEF /* AppleReposPresenter.swift in Sources */,
+				D82950B123C9CE5B00369CEF /* AppleReposInteractor.swift in Sources */,
+				D82950DD23C9F16600369CEF /* AppleReposScene.swift in Sources */,
+				D82950CE23C9EFD600369CEF /* EmojisPresenter.swift in Sources */,
+				D82950E923C9FABE00369CEF /* CoreDataRepository.swift in Sources */,
+				D82950B523C9CEB600369CEF /* EmojisInteractor.swift in Sources */,
+				D82950E023C9F37600369CEF /* View.swift in Sources */,
+				D82950BA23C9CF6F00369CEF /* EmojisGateway.swift in Sources */,
+				D82950D523C9F06500369CEF /* Presenter.swift in Sources */,
+				D82950D323C9F03500369CEF /* Scene.swift in Sources */,
+				D82950E623C9FA6900369CEF /* Repository.swift in Sources */,
+				D82ABA1F23C93303003B8FFD /* EmojisViewController.swift in Sources */,
 				D8CCE32A23C947450098CBA5 /* AppColors.swift in Sources */,
 				D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */,
+				D82950A523C9634300369CEF /* Emoji.swift in Sources */,
+				D82950A023C9615000369CEF /* GithubRepository.swift in Sources */,
+				D82950D923C9F15100369CEF /* AvatarsScene.swift in Sources */,
+				D82950A723C9669300369CEF /* GithubProvider.swift in Sources */,
 				D8CCE32F23C949210098CBA5 /* AppAssets.swift in Sources */,
+				D82950C023C9CFBD00369CEF /* AppleReposGateway.swift in Sources */,
 				D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */,
+				D82950CC23C9EF7400369CEF /* AvatarsViewController.swift in Sources */,
+				D82950D023C9F00B00369CEF /* EmojisScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
