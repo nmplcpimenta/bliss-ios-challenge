@@ -1,0 +1,23 @@
+input_dir: BlissHub/Resources
+output_dir: BlissHub/Source/MobileUI/GeneratedCode
+colors:
+    inputs: Colors/Palette.xml
+    outputs:
+        templateName: literals-swift4
+        output: AppColors.swift
+        params:
+            enumName: AppColors
+strings:
+    inputs: Strings/Localizable.strings
+    outputs: 
+        templateName: structured-swift4
+        output: AppStrings.swift
+        params:
+            enumName: AppStrings
+xcassets:
+    inputs: Assets.xcassets
+    outputs:
+        templateName: swift4
+        output: AppAssets.swift
+        params:
+            enumName: AppAssets
