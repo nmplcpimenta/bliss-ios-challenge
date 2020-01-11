@@ -198,6 +198,7 @@
 				D82ABA1323C93303003B8FFD /* Sources */,
 				D82ABA1423C93303003B8FFD /* Frameworks */,
 				D82ABA1523C93303003B8FFD /* Resources */,
+				D8CCE33123C94B850098CBA5 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -296,6 +297,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "SRCROOT=$(pwd)\n\necho $SRCROOT\n\n# Run SwiftGen\n\necho \"---- Generate resources constants for BlissHub ----\"\nmkdir -p ${PROJECT_DIR}/BlissHub/Source/MobileUI/GeneratedCode\necho $PODS_ROOT\n$PODS_ROOT/SwiftGen/bin/swiftgen config run --config ${PROJECT_DIR}/swiftgen.yml\n";
+		};
+		D8CCE33123C94B850098CBA5 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run Swiftlint\n\n${PODS_ROOT}/SwiftLint/swiftlint lint --strict --config ${PROJECT_DIR}/.swiftlint.yml\nerror_status=$?\n\nif [ $error_status -ne 0 ]; then\n    echo \"Aborting... you need to fix your code\"\nexit $error_status\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
