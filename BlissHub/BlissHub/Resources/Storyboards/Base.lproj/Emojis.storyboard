@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dV3-Jr-4c7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fA8-E0-pTk">
+            <objects>
+                <viewController id="dV3-Jr-4c7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hg7-t3-bK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emojis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqR-zL-xUm">
+                                <rect key="frame" x="182" y="418" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cqR-zL-xUm" firstAttribute="centerY" secondItem="z4g-44-eAy" secondAttribute="centerY" id="TOP-nL-eSo"/>
+                            <constraint firstItem="cqR-zL-xUm" firstAttribute="centerX" secondItem="z4g-44-eAy" secondAttribute="centerX" id="g1U-dd-xKg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z4g-44-eAy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabIconEmoji" id="NaU-bM-Rrd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qam-8g-oca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203" y="-817"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabIconEmoji" width="25" height="25"/>
+    </resources>
+</document>

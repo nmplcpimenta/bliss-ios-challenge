@@ -1,11 +1,17 @@
 PODS:
-  - Alamofire (4.9.1)
+  - Alamofire (5.0.0-rc.3)
+  - Moya/Core (14.0.0-beta.6):
+    - Alamofire (= 5.0.0-rc.3)
+  - Moya/RxSwift (14.0.0-beta.6):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - RxSwift (5.0.1)
   - SwiftGen (6.1.0)
-  - SwiftLint (0.38.0)
+  - SwiftLint (0.38.2)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (= 5.0.0-rc.3)
+  - Moya/RxSwift (= 14.0.0-beta.6)
   - RxSwift
   - SwiftGen
   - SwiftLint
@@ -13,16 +19,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Moya
     - RxSwift
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Moya: d4821fbcb3e784f34d2f82869e6855057a0b85d1
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
-  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
 
-PODFILE CHECKSUM: b810547be8692b328ab1317a9608c933231ece49
+PODFILE CHECKSUM: 97b05ea00219c788cc6254aa1128d1d77ac82077
 
 COCOAPODS: 1.8.4

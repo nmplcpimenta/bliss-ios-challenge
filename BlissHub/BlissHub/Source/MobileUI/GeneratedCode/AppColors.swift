@@ -22,6 +22,8 @@ internal extension AppColors {
   internal static let blue = #colorLiteral(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0)
   /// 0x00ff00ff (r: 0, g: 255, b: 0, a: 255)
   internal static let green = #colorLiteral(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0)
+  /// 0x4d4d4dff (r: 77, g: 77, b: 77, a: 255)
+  internal static let grey4D4D4D = #colorLiteral(red: 0.3019608, green: 0.3019608, blue: 0.3019608, alpha: 1.0)
   /// 0xff0000ff (r: 255, g: 0, b: 0, a: 255)
   internal static let red = #colorLiteral(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
   /// 0xffffffff (r: 255, g: 255, b: 255, a: 255)

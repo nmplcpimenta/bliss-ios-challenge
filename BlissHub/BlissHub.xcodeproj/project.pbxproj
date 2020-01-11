@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27D9B176729A3F51E9217A59 /* libPods-BlissHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080068D27F4E58C8FD52DC2 /* libPods-BlissHub.a */; };
 		D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1A23C93303003B8FFD /* AppDelegate.swift */; };
 		D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */; };
 		D82ABA1F23C93303003B8FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1E23C93303003B8FFD /* ViewController.swift */; };
@@ -19,12 +18,16 @@
 		D8CCE32C23C947C90098CBA5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8CCE32B23C947C90098CBA5 /* Localizable.strings */; };
 		D8CCE32F23C949210098CBA5 /* AppAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CCE32D23C949210098CBA5 /* AppAssets.swift */; };
 		D8CCE33023C949210098CBA5 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CCE32E23C949210098CBA5 /* AppStrings.swift */; };
+		D8CCE33423C94F9C0098CBA5 /* Emojis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8CCE33223C94F9C0098CBA5 /* Emojis.storyboard */; };
+		D8CCE33723C94FCA0098CBA5 /* Avatars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8CCE33523C94FCA0098CBA5 /* Avatars.storyboard */; };
+		D8CCE33A23C94FE80098CBA5 /* AppleRepos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8CCE33823C94FE80098CBA5 /* AppleRepos.storyboard */; };
+		FDBF6998A824C8B25C5134FE /* libPods-BlissHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA847E8AAC7794A06E82759E /* libPods-BlissHub.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.release.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.release.xcconfig"; sourceTree = "<group>"; };
-		7080068D27F4E58C8FD52DC2 /* libPods-BlissHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlissHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.debug.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.debug.xcconfig"; sourceTree = "<group>"; };
+		AA847E8AAC7794A06E82759E /* libPods-BlissHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlissHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E130D9F84853D819F08ADC /* Pods-BlissHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.debug.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.debug.xcconfig"; sourceTree = "<group>"; };
+		B8B4FE9D34729FD0557F0E09 /* Pods-BlissHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlissHub.release.xcconfig"; path = "Target Support Files/Pods-BlissHub/Pods-BlissHub.release.xcconfig"; sourceTree = "<group>"; };
 		D82ABA1723C93303003B8FFD /* BlissHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82ABA1A23C93303003B8FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		D8CCE32B23C947C90098CBA5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D8CCE32D23C949210098CBA5 /* AppAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssets.swift; sourceTree = "<group>"; };
 		D8CCE32E23C949210098CBA5 /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		D8CCE33323C94F9C0098CBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Emojis.storyboard; sourceTree = "<group>"; };
+		D8CCE33623C94FCA0098CBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Avatars.storyboard; sourceTree = "<group>"; };
+		D8CCE33923C94FE80098CBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AppleRepos.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27D9B176729A3F51E9217A59 /* libPods-BlissHub.a in Frameworks */,
+				FDBF6998A824C8B25C5134FE /* libPods-BlissHub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A5F22F8201AFBC591DE0E51 /* Frameworks */ = {
+		46717612D1CE59D041585441 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7080068D27F4E58C8FD52DC2 /* libPods-BlissHub.a */,
+				AA847E8AAC7794A06E82759E /* libPods-BlissHub.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,7 +72,7 @@
 				D82ABA1923C93303003B8FFD /* BlissHub */,
 				D82ABA1823C93303003B8FFD /* Products */,
 				FC482D5EAA607C947C81B151 /* Pods */,
-				7A5F22F8201AFBC591DE0E51 /* Frameworks */,
+				46717612D1CE59D041585441 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +121,9 @@
 		D8CCE31C23C93FB00098CBA5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D8CCE33823C94FE80098CBA5 /* AppleRepos.storyboard */,
+				D8CCE33523C94FCA0098CBA5 /* Avatars.storyboard */,
+				D8CCE33223C94F9C0098CBA5 /* Emojis.storyboard */,
 				D82ABA2523C93308003B8FFD /* LaunchScreen.storyboard */,
 				D82ABA2023C93303003B8FFD /* Main.storyboard */,
 			);
@@ -180,8 +189,8 @@
 		FC482D5EAA607C947C81B151 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */,
-				5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */,
+				B6E130D9F84853D819F08ADC /* Pods-BlissHub.debug.xcconfig */,
+				B8B4FE9D34729FD0557F0E09 /* Pods-BlissHub.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -193,7 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82ABA2B23C93308003B8FFD /* Build configuration list for PBXNativeTarget "BlissHub" */;
 			buildPhases = (
-				35E06E0E4F1BD051BC034B1C /* [CP] Check Pods Manifest.lock */,
+				3AFA5672A5D9C59AA15D9F8D /* [CP] Check Pods Manifest.lock */,
 				D8CCE32423C942FE0098CBA5 /* SwiftGen */,
 				D82ABA1323C93303003B8FFD /* Sources */,
 				D82ABA1423C93303003B8FFD /* Frameworks */,
@@ -251,14 +260,17 @@
 				D82ABA2723C93308003B8FFD /* LaunchScreen.storyboard in Resources */,
 				D8CCE32823C9461C0098CBA5 /* Palette.xml in Resources */,
 				D82ABA2423C93308003B8FFD /* Assets.xcassets in Resources */,
+				D8CCE33723C94FCA0098CBA5 /* Avatars.storyboard in Resources */,
 				D82ABA2223C93303003B8FFD /* Main.storyboard in Resources */,
+				D8CCE33423C94F9C0098CBA5 /* Emojis.storyboard in Resources */,
+				D8CCE33A23C94FE80098CBA5 /* AppleRepos.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35E06E0E4F1BD051BC034B1C /* [CP] Check Pods Manifest.lock */ = {
+		3AFA5672A5D9C59AA15D9F8D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,6 +361,30 @@
 				D82ABA2623C93308003B8FFD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8CCE33223C94F9C0098CBA5 /* Emojis.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8CCE33323C94F9C0098CBA5 /* Base */,
+			);
+			name = Emojis.storyboard;
+			sourceTree = "<group>";
+		};
+		D8CCE33523C94FCA0098CBA5 /* Avatars.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8CCE33623C94FCA0098CBA5 /* Base */,
+			);
+			name = Avatars.storyboard;
+			sourceTree = "<group>";
+		};
+		D8CCE33823C94FE80098CBA5 /* AppleRepos.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8CCE33923C94FE80098CBA5 /* Base */,
+			);
+			name = AppleRepos.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,7 +506,7 @@
 		};
 		D82ABA2C23C93308003B8FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6CD63FB68452873E9C71CC7 /* Pods-BlissHub.debug.xcconfig */;
+			baseConfigurationReference = B6E130D9F84853D819F08ADC /* Pods-BlissHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -489,7 +525,7 @@
 		};
 		D82ABA2D23C93308003B8FFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E9245C807FB89B418FCDB9C /* Pods-BlissHub.release.xcconfig */;
+			baseConfigurationReference = B8B4FE9D34729FD0557F0E09 /* Pods-BlissHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

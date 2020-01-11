@@ -8,5 +8,7 @@
     <color name="green">#00FF00</color>
     <color name="blue">#0000FF</color>
     <color name="black">#000000</color>
+    
+    <color name="grey4D4D4D">#4D4D4D</color>
 
 </resources>
