@@ -10,8 +10,8 @@ import Foundation
 
 internal enum Repository {
     
-    internal static var CoreData: CoreDataRepositoryContract {
-        return CoreDataRepository()
+    internal static var Realm: RealmRepositoryContract {
+        return RealmRepository()
     }
     
     internal static var Github: GithubRepositoryContract {

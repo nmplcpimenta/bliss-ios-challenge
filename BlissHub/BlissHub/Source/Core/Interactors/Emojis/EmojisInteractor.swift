@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol EmojisInteractorContract {
     
+    func getEmojis() -> Single<[EmojiModel]>
 }
 
 class EmojisInteractor: EmojisInteractorContract {
@@ -19,5 +21,20 @@ class EmojisInteractor: EmojisInteractorContract {
     init(gateway: EmojisGatewayContract) {
         
         self.gateway = gateway
+    }
+    
+    func getEmojis() -> Single<[EmojiModel]> {
+        return Single<[EmojiModel]>.create { [unowned self] single in
+            
+            _ = self.gateway.getEmojis().subscribe(
+                onSuccess: { emojiList in
+                    
+                    single(.success(emojiList))
+            }, onError: { error in
+                print(error.localizedDescription)
+            })
+            
+            return Disposables.create()
+        }
     }
 }

@@ -1,17 +1,27 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
   - Moya/Core (14.0.0-beta.6):
     - Alamofire (= 5.0.0-rc.3)
   - Moya/RxSwift (14.0.0-beta.6):
     - Moya/Core
     - RxSwift (~> 5.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
   - RxSwift (5.0.1)
   - SwiftGen (6.1.0)
   - SwiftLint (0.38.2)
 
 DEPENDENCIES:
   - Alamofire (= 5.0.0-rc.3)
+  - Kingfisher (~> 5.0)
   - Moya/RxSwift (= 14.0.0-beta.6)
+  - RxCocoa
   - RxSwift
   - SwiftGen
   - SwiftLint
@@ -19,18 +29,24 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Moya
+    - RxCocoa
+    - RxRelay
     - RxSwift
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   Moya: d4821fbcb3e784f34d2f82869e6855057a0b85d1
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
 
-PODFILE CHECKSUM: 97b05ea00219c788cc6254aa1128d1d77ac82077
+PODFILE CHECKSUM: 0898b0321cc9ae6baeb133cdeb99c6dad14a211b
 
 COCOAPODS: 1.8.4

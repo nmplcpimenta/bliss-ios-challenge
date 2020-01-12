@@ -18,6 +18,8 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum AppAssets {
+  internal static let _1f47c = ImageAsset(name: "1f47c")
+  internal static let notFoundRandomImage = ImageAsset(name: "NotFoundRandomImage")
   internal static let tabIconEmoji = ImageAsset(name: "TabIconEmoji")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

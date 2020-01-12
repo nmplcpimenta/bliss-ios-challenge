@@ -15,12 +15,12 @@ protocol AvatarsGatewayContract {
 class AvatarsGateway: AvatarsGatewayContract {
     
     let githubRepository: GithubRepositoryContract
-    let coreDataRepository: CoreDataRepositoryContract
+    let realmRepository: RealmRepositoryContract
     
     init(githubRepo: GithubRepositoryContract,
-         coreDataRepo: CoreDataRepositoryContract) {
+         realmRepo: RealmRepositoryContract) {
         
         self.githubRepository = githubRepo
-        self.coreDataRepository = coreDataRepo
+        self.realmRepository = realmRepo
     }
 }

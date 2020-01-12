@@ -10,7 +10,7 @@
         <!--Avatars-->
         <scene sceneID="RIC-fg-bdA">
             <objects>
-                <viewController id="KXV-Qq-6s3" sceneMemberID="viewController">
+                <viewController id="KXV-Qq-6s3" customClass="AvatarsViewController" customModule="BlissHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5r-it-Q0M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

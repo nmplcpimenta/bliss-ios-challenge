@@ -7,20 +7,51 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol EmojisGatewayContract {
     
+    func getEmojis() -> Single<[EmojiModel]>
 }
 
 class EmojisGateway: EmojisGatewayContract {
     
     let githubRepository: GithubRepositoryContract
-    let coreDataRepository: CoreDataRepositoryContract
+    let realmRepository: RealmRepositoryContract
     
     init(githubRepo: GithubRepositoryContract,
-         coreDataRepo: CoreDataRepositoryContract) {
+         realmRepo: RealmRepositoryContract) {
         
         self.githubRepository = githubRepo
-        self.coreDataRepository = coreDataRepo
+        self.realmRepository = realmRepo
+    }
+    
+    func getEmojis() -> Single<[EmojiModel]> {
+        return Single<[EmojiModel]>.create { [unowned self] single in
+            
+            if self.realmRepository.hasEmojis() {
+                _ = self.realmRepository.getEmojis().subscribe(
+                    onSuccess: { emojisRealmList in
+                        
+                        let emojiList: [EmojiModel] = emojisRealmList.map { $0.toModel() }
+                        
+                        single(.success(emojiList))
+                }, onError: { error in
+                    print(error.localizedDescription)
+                })
+            } else {
+                _ = self.githubRepository.getEmojis().subscribe(
+                    onSuccess: { emojisGithubList in
+                        
+                        let emojiList: [EmojiModel] = emojisGithubList.map { $0.toModel() }
+                        
+                        single(.success(emojiList))
+                }, onError: { error in
+                    print(error.localizedDescription)
+                })
+            }
+            
+            return Disposables.create()
+        }
     }
 }

@@ -4,40 +4,143 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Emojis View Controller-->
         <scene sceneID="fA8-E0-pTk">
             <objects>
-                <viewController id="dV3-Jr-4c7" sceneMemberID="viewController">
+                <viewController id="dV3-Jr-4c7" customClass="EmojisViewController" customModule="BlissHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hg7-t3-bK2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emojis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqR-zL-xUm">
-                                <rect key="frame" x="182" y="418" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RxE-ui-zsh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xka-ds-Bdi">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Xv-IU-PE2">
+                                                <rect key="frame" x="0.0" y="5" width="334" height="70"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotFoundRandomImage" translatesAutoresizingMaskIntoConstraints="NO" id="L2F-gu-ekG">
+                                                        <rect key="frame" x="132" y="0.0" width="70" height="70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="3bR-ot-RKQ"/>
+                                                            <constraint firstAttribute="width" constant="70" id="8PD-C7-K2s"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G6J-Mo-fGD">
+                                                <rect key="frame" x="334" y="15" width="80" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVR-KA-UeM">
+                                                        <rect key="frame" x="15" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="rxc-bK-Hog"/>
+                                                            <constraint firstAttribute="height" constant="50" id="ywl-Gi-JnI"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.20392156859999999" green="0.2274509804" blue="0.2470588235" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="didPressRandomizeButton:" destination="dV3-Jr-4c7" eventType="touchUpInside" id="Y8E-PC-san"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Luj-SC-oSy"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="57s-8o-3PC"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uuo-ln-ixj">
+                                        <rect key="frame" x="10" y="90" width="394" height="1"/>
+                                        <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ScC-eG-gvp"/>
+                                        </constraints>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-0o-kJB">
+                                        <rect key="frame" x="10" y="101" width="394" height="668"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jLB-GL-mqA">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmojisCollectionViewCell" id="TLy-Mf-g1T" customClass="EmojisCollectionViewCell" customModule="BlissHub" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3uk-T4-qNE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotFoundRandomImage" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-dl-dbk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="Koi-f9-SVn"/>
+                                                                <constraint firstAttribute="height" constant="50" id="cVs-XQ-tG4"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="L4b-dl-dbk" firstAttribute="leading" secondItem="3uk-T4-qNE" secondAttribute="leading" id="6sU-yg-Pbx"/>
+                                                        <constraint firstItem="L4b-dl-dbk" firstAttribute="width" secondItem="3uk-T4-qNE" secondAttribute="width" id="CXC-co-oVT"/>
+                                                        <constraint firstAttribute="bottom" secondItem="L4b-dl-dbk" secondAttribute="bottom" id="Dcy-sg-e1Z"/>
+                                                        <constraint firstAttribute="trailing" secondItem="L4b-dl-dbk" secondAttribute="trailing" id="SMY-Jp-wOT"/>
+                                                        <constraint firstItem="L4b-dl-dbk" firstAttribute="height" secondItem="3uk-T4-qNE" secondAttribute="height" id="c3t-Wp-Vr4"/>
+                                                        <constraint firstItem="L4b-dl-dbk" firstAttribute="top" secondItem="3uk-T4-qNE" secondAttribute="top" id="iDV-J2-68h"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <connections>
+                                                    <outlet property="imageEmoji" destination="L4b-dl-dbk" id="odH-rR-5vP"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Uuo-ln-ixj" secondAttribute="trailing" constant="10" id="Ht9-A6-Cma"/>
+                                    <constraint firstItem="Kid-0o-kJB" firstAttribute="leading" secondItem="RxE-ui-zsh" secondAttribute="leading" constant="10" id="V3q-rY-4zX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kid-0o-kJB" secondAttribute="trailing" constant="10" id="bxM-sG-sqK"/>
+                                    <constraint firstItem="Uuo-ln-ixj" firstAttribute="leading" secondItem="RxE-ui-zsh" secondAttribute="leading" constant="10" id="kyw-DX-Svz"/>
+                                    <constraint firstItem="xka-ds-Bdi" firstAttribute="leading" secondItem="RxE-ui-zsh" secondAttribute="leading" id="lWU-up-8Sc"/>
+                                    <constraint firstAttribute="trailing" secondItem="xka-ds-Bdi" secondAttribute="trailing" id="mQM-bg-jAM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="cqR-zL-xUm" firstAttribute="centerY" secondItem="z4g-44-eAy" secondAttribute="centerY" id="TOP-nL-eSo"/>
-                            <constraint firstItem="cqR-zL-xUm" firstAttribute="centerX" secondItem="z4g-44-eAy" secondAttribute="centerX" id="g1U-dd-xKg"/>
+                            <constraint firstItem="RxE-ui-zsh" firstAttribute="top" secondItem="z4g-44-eAy" secondAttribute="top" id="AJy-Wf-KfC"/>
+                            <constraint firstItem="RxE-ui-zsh" firstAttribute="leading" secondItem="z4g-44-eAy" secondAttribute="leading" id="NBd-EN-b5b"/>
+                            <constraint firstItem="z4g-44-eAy" firstAttribute="trailing" secondItem="RxE-ui-zsh" secondAttribute="trailing" id="h8E-ix-JFL"/>
+                            <constraint firstItem="z4g-44-eAy" firstAttribute="bottom" secondItem="RxE-ui-zsh" secondAttribute="bottom" id="hvX-Y9-aV3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z4g-44-eAy"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="TabIconEmoji" id="NaU-bM-Rrd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emojisCollection" destination="Kid-0o-kJB" id="NXt-0Z-jcz"/>
+                        <outlet property="randomEmojiImage" destination="L2F-gu-ekG" id="X3t-dJ-ZiE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qam-8g-oca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="-817"/>
+            <point key="canvasLocation" x="1202.8985507246377" y="-817.63392857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="NotFoundRandomImage" width="572" height="774"/>
         <image name="TabIconEmoji" width="25" height="25"/>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
     </resources>
 </document>

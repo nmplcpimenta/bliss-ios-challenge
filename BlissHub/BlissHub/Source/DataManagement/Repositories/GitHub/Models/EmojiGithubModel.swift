@@ -13,8 +13,8 @@ struct EmojiGithubModel {
     var name: String
     var url: String
     
-    func toModel() -> Emoji {
+    func toModel() -> EmojiModel {
         
-        return Emoji(name: name, url: url)
+        return EmojiModel(name: name, url: url)
     }
 }

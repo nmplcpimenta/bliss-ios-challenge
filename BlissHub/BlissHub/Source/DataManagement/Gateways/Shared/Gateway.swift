@@ -13,18 +13,18 @@ internal enum Gateway {
     internal static var Emojis: EmojisGatewayContract {
         return EmojisGateway(
             githubRepo: Repository.Github,
-            coreDataRepo: Repository.CoreData)
+            realmRepo: Repository.Realm)
     }
     
     internal static var Avatars: AvatarsGatewayContract {
         return AvatarsGateway(
             githubRepo: Repository.Github,
-            coreDataRepo: Repository.CoreData)
+            realmRepo: Repository.Realm)
     }
     
     internal static var AppleRepos: AppleReposGatewayContract {
         return AppleReposGateway(
             githubRepo: Repository.Github,
-            coreDataRepo: Repository.CoreData)
+            realmRepo: Repository.Realm)
     }
 }

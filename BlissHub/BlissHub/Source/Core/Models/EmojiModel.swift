@@ -1,5 +1,5 @@
 //
-//  CoreDataRepository.swift
+//  EmojiModel.swift
 //  BlissHub
 //
 //  Created by Nuno Pimenta on 11/01/2020.
@@ -8,10 +8,8 @@
 
 import Foundation
 
-protocol CoreDataRepositoryContract {
+struct EmojiModel {
     
-}
-
-class CoreDataRepository: CoreDataRepositoryContract {
-    
+    var name: String
+    var url: String
 }
