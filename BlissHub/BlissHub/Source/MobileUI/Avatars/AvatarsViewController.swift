@@ -61,13 +61,13 @@ class AvatarsViewController: UIViewController, AvatarsViewControllerContract {
             presenter = pre
             presenter?.view = self
         } else {
-            fatalError("Unable to initialize presenter for Avatars module")
+            fatalError(AppStrings.presenterInitErrorAvatars)
         }
     }
     
     private func setupUI() {
         searchBar.delegate = self
-        searchBar.placeholder = "username"
+        searchBar.placeholder = AppStrings.username
         searchBar.searchBarStyle = .minimal
         
         avatarsCollectionView.delegate = self

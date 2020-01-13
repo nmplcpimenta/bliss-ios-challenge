@@ -6,4 +6,23 @@
   Copyright © 2020 Nuno Pimenta. All rights reserved.
 */
 
-"backAction" = "Voltar";
+"username" = "username";
+
+"presenterInitErrorEmojis" = "Unable to initialize presenter for Emojis module";
+"presenterInitErrorAvatars" = "Unable to initialize presenter for Avatars module";
+"presenterInitErrorAppleRepos" = "Unable to initialize presenter for AppleRepos module";
+
+"appleRepoFullnamePrefix" = "apple/";
+
+"realmInitError" = "Unable to create Realm database instance";
+
+// GitHub
+"githubAPIURLBase" = "http://api.github.com";
+"githubAPIURLEmojis" = "/emojis";
+"githubAPIURLAvatars" = "/users/";
+"githubAPIURLAppleRepos" = "/users/apple/repos";
+"githubAPIURLAppleReposArgPage" = "page";
+"githubAPIURLAppleReposArgPerPage" = "per_page";
+"githubAPIURLSampleData" = "Half measures are as bad as nothing at all.";
+"githubAPIURLContentTypeKey" = "Content-type";
+"githubAPIURLContentTypeAppJSON" = "application/json";

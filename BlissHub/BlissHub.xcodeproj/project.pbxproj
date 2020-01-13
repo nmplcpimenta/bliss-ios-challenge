@@ -28,7 +28,6 @@
 		D82950D923C9F15100369CEF /* AvatarsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950D823C9F15100369CEF /* AvatarsScene.swift */; };
 		D82950DB23C9F15B00369CEF /* AppleReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950DA23C9F15B00369CEF /* AppleReposPresenter.swift */; };
 		D82950DD23C9F16600369CEF /* AppleReposScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950DC23C9F16600369CEF /* AppleReposScene.swift */; };
-		D82950E023C9F37600369CEF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950DF23C9F37600369CEF /* View.swift */; };
 		D82950E423C9F98900369CEF /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950E323C9F98900369CEF /* Gateway.swift */; };
 		D82950E623C9FA6900369CEF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950E523C9FA6900369CEF /* Repository.swift */; };
 		D82950E923C9FABE00369CEF /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950E823C9FABE00369CEF /* RealmRepository.swift */; };
@@ -38,7 +37,6 @@
 		D82950F523CB2AAC00369CEF /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950F423CB2AAC00369CEF /* EmojiViewModel.swift */; };
 		D82950F723CB4E8000369CEF /* RealmStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950F623CB4E8000369CEF /* RealmStoreManager.swift */; };
 		D82950FA23CB528300369CEF /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950F923CB528300369CEF /* Emoji.swift */; };
-		D82950FC23CBC04C00369CEF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950FB23CBC04C00369CEF /* UIViewController+Extensions.swift */; };
 		D82950FF23CBC19B00369CEF /* AvatarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82950FE23CBC19B00369CEF /* AvatarViewModel.swift */; };
 		D829510123CBC24F00369CEF /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510023CBC24F00369CEF /* AvatarModel.swift */; };
 		D829510423CBC3F000369CEF /* AvatarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510323CBC3F000369CEF /* AvatarsCollectionViewCell.swift */; };
@@ -47,6 +45,11 @@
 		D829510A23CBDB9500369CEF /* AvatarGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510923CBDB9500369CEF /* AvatarGithubModel.swift */; };
 		D829510C23CC6BA400369CEF /* NotificationDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510B23CC6BA400369CEF /* NotificationDescriptor.swift */; };
 		D829510E23CC6BF100369CEF /* KeyboardPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510D23CC6BF100369CEF /* KeyboardPayload.swift */; };
+		D829511223CC6F6B00369CEF /* AppleReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829511123CC6F6B00369CEF /* AppleReposTableViewCell.swift */; };
+		D829511423CC711200369CEF /* AppleRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829511323CC711200369CEF /* AppleRepoViewModel.swift */; };
+		D829511623CC716D00369CEF /* AppleRepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829511523CC716D00369CEF /* AppleRepoModel.swift */; };
+		D829511823CC791000369CEF /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829511723CC791000369CEF /* UIScrollView+Extensions.swift */; };
+		D829511A23CC7EFA00369CEF /* AppleRepoGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829511923CC7EFA00369CEF /* AppleRepoGithubModel.swift */; };
 		D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1A23C93303003B8FFD /* AppDelegate.swift */; };
 		D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */; };
 		D82ABA1F23C93303003B8FFD /* EmojisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1E23C93303003B8FFD /* EmojisViewController.swift */; };
@@ -89,7 +92,6 @@
 		D82950D823C9F15100369CEF /* AvatarsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsScene.swift; sourceTree = "<group>"; };
 		D82950DA23C9F15B00369CEF /* AppleReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposPresenter.swift; sourceTree = "<group>"; };
 		D82950DC23C9F16600369CEF /* AppleReposScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposScene.swift; sourceTree = "<group>"; };
-		D82950DF23C9F37600369CEF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		D82950E323C9F98900369CEF /* Gateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
 		D82950E523C9FA6900369CEF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		D82950E823C9FABE00369CEF /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
@@ -99,7 +101,6 @@
 		D82950F423CB2AAC00369CEF /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
 		D82950F623CB4E8000369CEF /* RealmStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStoreManager.swift; sourceTree = "<group>"; };
 		D82950F923CB528300369CEF /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
-		D82950FB23CBC04C00369CEF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D82950FE23CBC19B00369CEF /* AvatarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewModel.swift; sourceTree = "<group>"; };
 		D829510023CBC24F00369CEF /* AvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarModel.swift; sourceTree = "<group>"; };
 		D829510323CBC3F000369CEF /* AvatarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +109,11 @@
 		D829510923CBDB9500369CEF /* AvatarGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarGithubModel.swift; sourceTree = "<group>"; };
 		D829510B23CC6BA400369CEF /* NotificationDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDescriptor.swift; sourceTree = "<group>"; };
 		D829510D23CC6BF100369CEF /* KeyboardPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPayload.swift; sourceTree = "<group>"; };
+		D829511123CC6F6B00369CEF /* AppleReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReposTableViewCell.swift; sourceTree = "<group>"; };
+		D829511323CC711200369CEF /* AppleRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRepoViewModel.swift; sourceTree = "<group>"; };
+		D829511523CC716D00369CEF /* AppleRepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRepoModel.swift; sourceTree = "<group>"; };
+		D829511723CC791000369CEF /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		D829511923CC7EFA00369CEF /* AppleRepoGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRepoGithubModel.swift; sourceTree = "<group>"; };
 		D82ABA1723C93303003B8FFD /* BlissHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82ABA1A23C93303003B8FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 			children = (
 				D82950A423C9634200369CEF /* EmojiModel.swift */,
 				D829510023CBC24F00369CEF /* AvatarModel.swift */,
+				D829511523CC716D00369CEF /* AppleRepoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				D82950A923C96BDE00369CEF /* String+Extensions.swift */,
-				D82950FB23CBC04C00369CEF /* UIViewController+Extensions.swift */,
+				D829511723CC791000369CEF /* UIScrollView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +232,7 @@
 			children = (
 				D82950A123C9627A00369CEF /* EmojiGithubModel.swift */,
 				D829510923CBDB9500369CEF /* AvatarGithubModel.swift */,
+				D829511923CC7EFA00369CEF /* AppleRepoGithubModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,6 +294,8 @@
 		D82950C523C9EDA900369CEF /* AppleRepos */ = {
 			isa = PBXGroup;
 			children = (
+				D829511023CC6F5300369CEF /* Models */,
+				D829510F23CC6F4900369CEF /* Cells */,
 				D82950C923C9EF6900369CEF /* AppleReposViewController.swift */,
 			);
 			path = AppleRepos;
@@ -323,7 +333,6 @@
 			children = (
 				D82950D223C9F03500369CEF /* Scene.swift */,
 				D82950D423C9F06500369CEF /* Presenter.swift */,
-				D82950DF23C9F37600369CEF /* View.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -421,6 +430,22 @@
 				D829510323CBC3F000369CEF /* AvatarsCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D829510F23CC6F4900369CEF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D829511123CC6F6B00369CEF /* AppleReposTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D829511023CC6F5300369CEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D829511323CC711200369CEF /* AppleRepoViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D82ABA0E23C93302003B8FFD = {
@@ -709,7 +734,7 @@
 				D82950D723C9F14700369CEF /* AvatarsPresenter.swift in Sources */,
 				D82950CA23C9EF6900369CEF /* AppleReposViewController.swift in Sources */,
 				D82950BD23C9CFA500369CEF /* AvatarsGateway.swift in Sources */,
-				D82950FC23CBC04C00369CEF /* UIViewController+Extensions.swift in Sources */,
+				D829511423CC711200369CEF /* AppleRepoViewModel.swift in Sources */,
 				D82950EC23C9FBBD00369CEF /* Interactor.swift in Sources */,
 				D82950A223C9627A00369CEF /* EmojiGithubModel.swift in Sources */,
 				D82950F523CB2AAC00369CEF /* EmojiViewModel.swift in Sources */,
@@ -719,13 +744,13 @@
 				D829510C23CC6BA400369CEF /* NotificationDescriptor.swift in Sources */,
 				D829510123CBC24F00369CEF /* AvatarModel.swift in Sources */,
 				D82950B123C9CE5B00369CEF /* AppleReposInteractor.swift in Sources */,
+				D829511823CC791000369CEF /* UIScrollView+Extensions.swift in Sources */,
 				D82950DD23C9F16600369CEF /* AppleReposScene.swift in Sources */,
 				D82950CE23C9EFD600369CEF /* EmojisPresenter.swift in Sources */,
 				D82950E923C9FABE00369CEF /* RealmRepository.swift in Sources */,
 				D829510623CBC8C900369CEF /* Avatar.swift in Sources */,
 				D82950F723CB4E8000369CEF /* RealmStoreManager.swift in Sources */,
 				D82950B523C9CEB600369CEF /* EmojisInteractor.swift in Sources */,
-				D82950E023C9F37600369CEF /* View.swift in Sources */,
 				D829510E23CC6BF100369CEF /* KeyboardPayload.swift in Sources */,
 				D82950BA23C9CF6F00369CEF /* EmojisGateway.swift in Sources */,
 				D82950D523C9F06500369CEF /* Presenter.swift in Sources */,
@@ -735,6 +760,8 @@
 				D8CCE32A23C947450098CBA5 /* AppColors.swift in Sources */,
 				D82950FA23CB528300369CEF /* Emoji.swift in Sources */,
 				D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */,
+				D829511223CC6F6B00369CEF /* AppleReposTableViewCell.swift in Sources */,
+				D829511623CC716D00369CEF /* AppleRepoModel.swift in Sources */,
 				D82950EF23CA8D2A00369CEF /* EmojisCollectionViewCell.swift in Sources */,
 				D82950A523C9634300369CEF /* EmojiModel.swift in Sources */,
 				D82950A023C9615000369CEF /* GithubRepository.swift in Sources */,
@@ -744,6 +771,7 @@
 				D82950FF23CBC19B00369CEF /* AvatarViewModel.swift in Sources */,
 				D829510823CBC90900369CEF /* AvatarRealmModel.swift in Sources */,
 				D82950A723C9669300369CEF /* GithubProvider.swift in Sources */,
+				D829511A23CC7EFA00369CEF /* AppleRepoGithubModel.swift in Sources */,
 				D8CCE32F23C949210098CBA5 /* AppAssets.swift in Sources */,
 				D82950C023C9CFBD00369CEF /* AppleReposGateway.swift in Sources */,
 				D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */,

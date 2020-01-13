@@ -14,6 +14,7 @@ protocol GithubRepositoryContract {
     
     func getEmojis() -> Single<[EmojiGithubModel]?>
     func getUser(username: String) -> Single<AvatarGithubModel?>
+    func getAppleReposPage(page: Int, size: Int) -> Single<[AppleRepoGithubModel]?>
 }
 
 class GithubRepository: GithubRepositoryContract {
@@ -80,6 +81,39 @@ class GithubRepository: GithubRepositoryContract {
                             
                             single(.success(nil))
                         }
+                    } catch {
+                        print("Failure on mapping a JSON object from response")
+                        
+                        single(.success(nil))
+                    }
+                case let .error(error):
+                    // Error handling
+                    
+                    single(.error(error))
+                }
+            }
+            
+            return Disposables.create()
+        }
+    }
+    
+    func getAppleReposPage(page: Int, size: Int) -> Single<[AppleRepoGithubModel]?> {
+        return Single<[AppleRepoGithubModel]?>.create { single in
+            
+            _ = GithubProvider.instance.rx.request(.getAppleRepos(page: page, size: size)).subscribe { event in
+                
+                switch event {
+                case let .success(response):
+                    do {
+                        _ = try response.filterSuccessfulStatusCodes()
+                        let appleReposJSON = try response.mapJSON()
+                        print(appleReposJSON)
+                        
+                        let appleReposGithubModelList = try response.map([AppleRepoGithubModel].self)
+                        
+                        print("AppleRepos server hit with " + String(appleReposGithubModelList.count) + " results")
+                        
+                        single(.success(appleReposGithubModelList))
                     } catch {
                         print("Failure on mapping a JSON object from response")
                         

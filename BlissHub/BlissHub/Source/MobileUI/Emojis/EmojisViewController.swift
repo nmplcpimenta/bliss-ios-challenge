@@ -50,7 +50,7 @@ class EmojisViewController: UIViewController, EmojisViewControllerContract {
             presenter = pre
             presenter?.view = self
         } else {
-            fatalError("Unable to initialize presenter for Emojis module")
+            fatalError(AppStrings.presenterInitErrorEmojis)
         }
     }
     

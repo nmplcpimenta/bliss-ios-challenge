@@ -33,7 +33,7 @@ class RealmStoreManager: RealmStoreManagerContract {
         do {
             database = try Realm()
         } catch {
-            fatalError("Unable to create Realm database instance")
+            fatalError(AppStrings.realmInitError)
         }
     }
 }

@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol AppleReposInteractorContract {
     
+    func getAppleReposPage(page: Int) -> Single<[AppleRepoModel]?>
 }
 
 class AppleReposInteractor: AppleReposInteractorContract {
@@ -19,5 +21,23 @@ class AppleReposInteractor: AppleReposInteractorContract {
     init(gateway: AppleReposGatewayContract) {
         
         self.gateway = gateway
+    }
+}
+
+extension AppleReposInteractor {
+    
+    func getAppleReposPage(page: Int) -> Single<[AppleRepoModel]?> {
+        return Single<[AppleRepoModel]?>.create { single in
+            
+            _ = self.gateway.getAppleReposPage(page: page, size: 10).subscribe(
+                onSuccess: { appleRepoModelList in
+                    
+                    single(.success(appleRepoModelList))
+            }, onError: { error in
+                single(.error(error))
+            })
+            
+            return Disposables.create()
+        }
     }
 }

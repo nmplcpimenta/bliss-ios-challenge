@@ -13,22 +13,22 @@ enum GithubService {
     
     case getEmojis
     case getUser(username: String)
-    case getAppleRepos(page: String, size: Int)
+    case getAppleRepos(page: Int, size: Int)
 }
 
 extension GithubService: TargetType {
     var baseURL: URL {
-        return URL(string: "http://api.github.com")!
+        return URL(string: AppStrings.githubAPIURLBase)!
     }
     
     var path: String {
         switch self {
         case .getEmojis:
-            return "/emojis"
+            return AppStrings.githubAPIURLEmojis
         case .getUser(let username):
-            return "/users/\(username)"
+            return AppStrings.githubAPIURLAvatars + username
         case .getAppleRepos:
-            return "/users/apple/repos"
+            return AppStrings.githubAPIURLAppleRepos
         }
     }
     
@@ -44,19 +44,22 @@ extension GithubService: TargetType {
         case .getEmojis, .getUser:// Send no parameters
             return .requestPlain
         case .getAppleRepos(let page, let size):
-            return .requestParameters(parameters: ["page": page, "size": String(size)], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters:
+                [AppStrings.githubAPIURLAppleReposArgPage: String(page),
+                 AppStrings.githubAPIURLAppleReposArgPerPage: String(size)],
+              encoding: URLEncoding.queryString)
         }
     }
     
     var sampleData: Data {
-        return "Half measures are as bad as nothing at all.".utf8Encoded
+        return AppStrings.githubAPIURLSampleData.utf8Encoded
     }
     
     var headers: [String: String]? {
-        return ["Content-type": "application/json"]
+        return [AppStrings.githubAPIURLContentTypeKey: AppStrings.githubAPIURLContentTypeAppJSON]
     }
 }
 
 class GithubProvider {
-    static let instance: MoyaProvider<GithubService> = MoyaProvider<GithubService>()
+    static let instance: MoyaProvider<GithubService> = MoyaProvider<GithubService>(plugins: [NetworkLoggerPlugin()])
 }

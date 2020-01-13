@@ -19,13 +19,31 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yvX-gQ-hhQ">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppleReposTableViewCell" rowHeight="60" id="yvX-gQ-hhQ" customClass="AppleReposTableViewCell" customModule="BlissHub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yvX-gQ-hhQ" id="nxr-f3-Hny">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcH-JG-CHb">
+                                                    <rect key="frame" x="10" y="20" width="394" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rcH-JG-CHb" secondAttribute="bottom" constant="4" id="CGS-hC-WkF"/>
+                                                <constraint firstItem="rcH-JG-CHb" firstAttribute="leading" secondItem="nxr-f3-Hny" secondAttribute="leading" constant="10" id="FGF-j9-XpB"/>
+                                                <constraint firstAttribute="trailing" secondItem="rcH-JG-CHb" secondAttribute="trailing" constant="10" id="FGn-6R-t9g"/>
+                                                <constraint firstItem="rcH-JG-CHb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nxr-f3-Hny" secondAttribute="top" constant="4" id="H9N-o5-orb"/>
+                                                <constraint firstItem="rcH-JG-CHb" firstAttribute="centerY" secondItem="nxr-f3-Hny" secondAttribute="centerY" id="c05-oG-oaw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="repoName" destination="rcH-JG-CHb" id="eSd-np-3AJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -41,6 +59,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="AppleRepos" id="lXp-F9-gDb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="appleReposTableView" destination="IaV-xT-t44" id="8X0-Au-GXU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

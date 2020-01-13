@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol AppleReposGatewayContract {
     
+    func getAppleReposPage(page: Int, size: Int) -> Single<[AppleRepoModel]?>
 }
 
 class AppleReposGateway: AppleReposGatewayContract {
@@ -22,5 +24,29 @@ class AppleReposGateway: AppleReposGatewayContract {
         
         self.githubRepository = githubRepo
         self.realmRepository = realmRepo
+    }
+}
+
+extension AppleReposGateway {
+    
+    func getAppleReposPage(page: Int, size: Int) -> Single<[AppleRepoModel]?> {
+        return Single<[AppleRepoModel]?>.create { single in
+            
+            _ = self.githubRepository.getAppleReposPage(page: page, size: size).subscribe(
+                onSuccess: { appleRepoGithubModelList in
+                    
+                    if let appleRepoGithubModelList = appleRepoGithubModelList {
+                        let appleRepoModelList = appleRepoGithubModelList.map { $0.toModel() }
+                        
+                        single(.success(appleRepoModelList))
+                    } else {
+                        single(.success(nil))
+                    }
+            }, onError: { error in
+                single(.error(error))
+            })
+            
+            return Disposables.create()
+        }
     }
 }
