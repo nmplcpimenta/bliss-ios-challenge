@@ -9,6 +9,7 @@ target 'BlissHub' do
 	pod 'RxCocoa'
 	pod 'Alamofire', '5.0.0-rc.3'
 	pod 'Moya/RxSwift', '14.0.0-beta.6'
+	pod 'RealmSwift'
 
 	pod 'Kingfisher', '~> 5.0'
 end

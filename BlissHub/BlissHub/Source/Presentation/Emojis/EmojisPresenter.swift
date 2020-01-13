@@ -70,16 +70,18 @@ extension EmojisPresenter {
     func getEmojis() -> Completable {
         return Completable.create { [unowned self] completable in
             
-            _ = self.interactor.getEmojis().subscribe(
-                onSuccess: { [unowned self] (emojiList) in
+            self.interactor.getEmojis().subscribe(
+                onSuccess: { [unowned self] emojiList in
                 
-                    self.updateEmojis(emojiList: emojiList)
+                    if let emojiList = emojiList {
+                        self.updateEmojis(emojiList: emojiList)
+                    }
                     
                     completable(.completed)
             }, onError: { error in
                 print(error.localizedDescription)
                 completable(.error(error))
-            })
+            }).disposed(by: self.disposeBag)
             
             return Disposables.create()
         }

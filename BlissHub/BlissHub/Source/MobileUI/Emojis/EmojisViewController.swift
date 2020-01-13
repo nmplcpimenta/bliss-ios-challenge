@@ -45,6 +45,7 @@ class EmojisViewController: UIViewController, EmojisViewControllerContract {
     }
     
     private func setupScene() {
+        
         if let pre = Scene.emojis.configure() as? EmojisPresenterContract {
             presenter = pre
             presenter?.view = self
@@ -67,19 +68,19 @@ class EmojisViewController: UIViewController, EmojisViewControllerContract {
     
     private func setupBinding() {
         emojis.bind(to: emojisCollection.rx.items(
-            cellIdentifier: "EmojisCollectionViewCell",
+            cellIdentifier: EmojisCollectionViewCell.identifier,
             cellType: EmojisCollectionViewCell.self)) { (_, emoji, cell) in
             
                 cell.emoji = emoji
         }.disposed(by: disposeBag)
         
-        _ = randomEmoji.subscribe { [unowned self] event in
+        randomEmoji.subscribe { [unowned self] event in
             switch event {
             case .next(let emojiViewModel):
                 self.randomEmojiImage.kf.setImage(with: URL(string: emojiViewModel.url))
             default: break
             }
-        }
+        }.disposed(by: disposeBag)
     }
     
     private func loadData() {
@@ -92,13 +93,13 @@ class EmojisViewController: UIViewController, EmojisViewControllerContract {
     }
     
     private func loadEmojis(refreshing: Bool = false) {
-        _ = presenter?.getEmojis().subscribe(onCompleted: { [unowned self] in
+        presenter?.getEmojis().subscribe(onCompleted: { [unowned self] in
             if refreshing {
                 self.refreshControl.endRefreshing()
             }
         }, onError: { _ in
             // Something...
-        })
+        }).disposed(by: disposeBag)
     }
     
     @IBAction func didPressRandomizeButton(_ sender: UIButton) {

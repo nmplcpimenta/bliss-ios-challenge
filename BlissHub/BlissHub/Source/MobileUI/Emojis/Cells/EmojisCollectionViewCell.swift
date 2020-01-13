@@ -12,6 +12,8 @@ import Kingfisher
 
 class EmojisCollectionViewCell: UICollectionViewCell {
     
+    static let identifier: String = "EmojisCollectionViewCell"
+    
     @IBOutlet weak var imageEmoji: UIImageView!
     
     var emoji: EmojiViewModel? {
@@ -21,10 +23,6 @@ class EmojisCollectionViewCell: UICollectionViewCell {
                 setImageURL(url: url)
             }
         }
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
     }
     
     func setImageURL(url: URL?) {

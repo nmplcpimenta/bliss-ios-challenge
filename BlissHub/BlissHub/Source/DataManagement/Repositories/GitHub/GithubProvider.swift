@@ -12,7 +12,7 @@ import Moya
 enum GithubService {
     
     case getEmojis
-    case searchUser(username: String)
+    case getUser(username: String)
     case getAppleRepos(page: String, size: Int)
 }
 
@@ -25,7 +25,7 @@ extension GithubService: TargetType {
         switch self {
         case .getEmojis:
             return "/emojis"
-        case .searchUser(let username):
+        case .getUser(let username):
             return "/users/\(username)"
         case .getAppleRepos:
             return "/users/apple/repos"
@@ -34,14 +34,14 @@ extension GithubService: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .getEmojis, .searchUser, .getAppleRepos:
+        case .getEmojis, .getUser, .getAppleRepos:
             return .get
         }
     }
     
     var task: Task {
         switch self {
-        case .getEmojis, .searchUser:// Send no parameters
+        case .getEmojis, .getUser:// Send no parameters
             return .requestPlain
         case .getAppleRepos(let page, let size):
             return .requestParameters(parameters: ["page": page, "size": String(size)], encoding: URLEncoding.queryString)
