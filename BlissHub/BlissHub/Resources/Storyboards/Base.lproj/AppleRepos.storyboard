@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AppleRepos-->
+        <!--Apple Repos View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AppleReposViewController" customModule="BlissHub" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="AppleRepos" id="lXp-F9-gDb"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabIconAppleRepos" id="lXp-F9-gDb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="appleReposTableView" destination="IaV-xT-t44" id="8X0-Au-GXU"/>
@@ -68,4 +68,7 @@
             <point key="canvasLocation" x="1204" y="656"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabIconAppleRepos" width="25" height="25"/>
+    </resources>
 </document>

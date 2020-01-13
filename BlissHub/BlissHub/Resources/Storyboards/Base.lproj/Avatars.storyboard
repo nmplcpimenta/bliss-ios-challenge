@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Avatars-->
+        <!--Avatars View Controller-->
         <scene sceneID="RIC-fg-bdA">
             <objects>
                 <viewController id="KXV-Qq-6s3" customClass="AvatarsViewController" customModule="BlissHub" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ag3-oc-TIJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Avatars" id="7re-tV-tiE"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabIconAvatars" id="7re-tV-tiE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="avatarsCollectionView" destination="sgx-Lz-cmB" id="g1w-8S-NN6"/>
@@ -120,4 +120,7 @@
             <point key="canvasLocation" x="1204.3478260869565" y="-92.410714285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabIconAvatars" width="25" height="25"/>
+    </resources>
 </document>
