@@ -45,6 +45,8 @@
 		D829510623CBC8C900369CEF /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510523CBC8C900369CEF /* Avatar.swift */; };
 		D829510823CBC90900369CEF /* AvatarRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510723CBC90900369CEF /* AvatarRealmModel.swift */; };
 		D829510A23CBDB9500369CEF /* AvatarGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510923CBDB9500369CEF /* AvatarGithubModel.swift */; };
+		D829510C23CC6BA400369CEF /* NotificationDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510B23CC6BA400369CEF /* NotificationDescriptor.swift */; };
+		D829510E23CC6BF100369CEF /* KeyboardPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829510D23CC6BF100369CEF /* KeyboardPayload.swift */; };
 		D82ABA1B23C93303003B8FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1A23C93303003B8FFD /* AppDelegate.swift */; };
 		D82ABA1D23C93303003B8FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */; };
 		D82ABA1F23C93303003B8FFD /* EmojisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82ABA1E23C93303003B8FFD /* EmojisViewController.swift */; };
@@ -104,6 +106,8 @@
 		D829510523CBC8C900369CEF /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		D829510723CBC90900369CEF /* AvatarRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarRealmModel.swift; sourceTree = "<group>"; };
 		D829510923CBDB9500369CEF /* AvatarGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarGithubModel.swift; sourceTree = "<group>"; };
+		D829510B23CC6BA400369CEF /* NotificationDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDescriptor.swift; sourceTree = "<group>"; };
+		D829510D23CC6BF100369CEF /* KeyboardPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPayload.swift; sourceTree = "<group>"; };
 		D82ABA1723C93303003B8FFD /* BlissHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82ABA1A23C93303003B8FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82ABA1C23C93303003B8FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +332,8 @@
 			isa = PBXGroup;
 			children = (
 				D82950A823C96BCC00369CEF /* Extensions */,
+				D829510B23CC6BA400369CEF /* NotificationDescriptor.swift */,
+				D829510D23CC6BF100369CEF /* KeyboardPayload.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -710,6 +716,7 @@
 				D82950E423C9F98900369CEF /* Gateway.swift in Sources */,
 				D829510423CBC3F000369CEF /* AvatarsCollectionViewCell.swift in Sources */,
 				D82950DB23C9F15B00369CEF /* AppleReposPresenter.swift in Sources */,
+				D829510C23CC6BA400369CEF /* NotificationDescriptor.swift in Sources */,
 				D829510123CBC24F00369CEF /* AvatarModel.swift in Sources */,
 				D82950B123C9CE5B00369CEF /* AppleReposInteractor.swift in Sources */,
 				D82950DD23C9F16600369CEF /* AppleReposScene.swift in Sources */,
@@ -719,6 +726,7 @@
 				D82950F723CB4E8000369CEF /* RealmStoreManager.swift in Sources */,
 				D82950B523C9CEB600369CEF /* EmojisInteractor.swift in Sources */,
 				D82950E023C9F37600369CEF /* View.swift in Sources */,
+				D829510E23CC6BF100369CEF /* KeyboardPayload.swift in Sources */,
 				D82950BA23C9CF6F00369CEF /* EmojisGateway.swift in Sources */,
 				D82950D523C9F06500369CEF /* Presenter.swift in Sources */,
 				D82950D323C9F03500369CEF /* Scene.swift in Sources */,

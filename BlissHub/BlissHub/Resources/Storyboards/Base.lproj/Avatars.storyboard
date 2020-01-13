@@ -111,6 +111,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="avatarsCollectionView" destination="sgx-Lz-cmB" id="g1w-8S-NN6"/>
+                        <outlet property="constraintBottom" destination="U7E-Rz-s6u" id="ezA-Ph-jQh"/>
                         <outlet property="searchBar" destination="fMe-ei-0tZ" id="Zfo-LD-LVT"/>
                     </connections>
                 </viewController>
